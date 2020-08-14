@@ -1,8 +1,8 @@
 # Project Overview
 
-## Drink-up
+## Project Name
 
-The name of your project.
+Drink Up
 
 ## Project Description
 
