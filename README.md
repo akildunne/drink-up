@@ -122,7 +122,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |  Day | Deliverable | Status
 |---|---| ---|
 |August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 17| Project Approval | Incomplete
+|August 17| Project Approval, Start HTML | Incomplete
 |August 18| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |August 19| Initial Clickable Model  | Incomplete
 |August 20| MVP | Incomplete
@@ -130,19 +130,22 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+Upload pic.
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
+I anticipate neededing quite a bit of time for each feature. My goal is to focus on the HTML and CSS first and complete as quickly as possible so I can then focus my time on the functionality of the app. I will try to save time where I can to devote the majority to JS. If I am able to complete my MVP on Thursday as planned, I will then go back and update CSS as much as possible.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| HTML Set-up | H | 3.5hrs| hrs | hrs |
+| CSS Set-up | H | 4.5hrs | hrs | hrs |
+| Flex Box Layout | M | 6hrs | hrs | hrs | 
+| Drop-down Link API | H | 8hrs | hrs | hrs |
+| Search Button | M | 3hrs | hrs | hrs |
+| Image API | H | 6hrs | hrs | hrs |
+| Adjusting Layout & API Results | H | 10hrs| hrs | hrs |
+| Total | H | 41hrs| hrs | hrs |
 
 ## Code Snippet
 
