@@ -140,7 +140,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-[Imgur](https://imgur.com/QEDB0C7)
+https://imgur.com/QEDB0C7
 
 ## Timeframes
 
