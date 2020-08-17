@@ -96,8 +96,6 @@ Sample JSON:
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
-
 Mobile Version: 
 https://imgur.com/7S9BRuy
 https://imgur.com/wbuWMiI
@@ -108,8 +106,6 @@ Tablet Version:
 https://imgur.com/eXEj3w
 
 ### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
 
@@ -124,10 +120,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Add random cocktail API at home page
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
