@@ -117,13 +117,14 @@ https://imgur.com/eXEj3w
 
 - Choose cocktail by name/image and have cocktail pop up on new page
 - Add random cocktail end point at home page
+- Add a search text box for the user to enter cocktail names directly
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|August 17| Project Approval, Start HTML | Incomplete
+|August 17| Project Approval, Start HTML | Complete
 |August 18| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |August 19| Initial Clickable Model  | Incomplete
 |August 20| MVP | Incomplete
