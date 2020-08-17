@@ -98,7 +98,7 @@ Sample JSON:
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="7S9BRuy"><a href="https://imgur.com/7S9BRuy">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+[img]https://i.imgur.com/7S9BRuy.jpg[/img]
 
 ### MVP/PostMVP
 
