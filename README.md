@@ -123,7 +123,7 @@ https://imgur.com/eXEj3w
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |August 17| Project Approval, Start HTML | Incomplete
 |August 18| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |August 19| Initial Clickable Model  | Incomplete
