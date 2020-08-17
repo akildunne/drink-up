@@ -115,9 +115,8 @@ https://imgur.com/eXEj3w
 
 #### PostMVP  
 
-- Add second API for drink ID
 - Choose cocktail by name/image and have cocktail pop up on new page
-- Add random cocktail API at home page
+- Add random cocktail end point at home page
 
 ## Project Schedule
 
