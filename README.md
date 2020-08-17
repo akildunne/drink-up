@@ -98,7 +98,14 @@ Sample JSON:
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
+Mobile Version: 
 https://imgur.com/7S9BRuy
+https://imgur.com/wbuWMiI
+https://imgur.com/ErnStkk
+https://imgur.com/hh5ZP5D
+
+Tablet Version:
+https://imgur.com/eXEj3w
 
 ### MVP/PostMVP
 
@@ -133,7 +140,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Upload pic.
+[Imgur](https://imgur.com/QEDB0C7)
 
 ## Timeframes
 
