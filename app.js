@@ -51,12 +51,14 @@ async function getLiquorDetails(id) {
   const idUrl = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
   try {
     const response = await axios.get(idUrl)
-    let id = drink.idDrink
+    // console.log(response.data.drinks)
+
+    response.data.
   } catch (error) {
     console.log(`Error: ${error}`)
   }
 }
 
-drinkResultWrapper.addEventListener('click', () => {
-  getLiquorDetails(drinkResultWrapper.value)
-})
+// result.addEventListener('click', () => {
+//   getLiquorDetails(result.value)
+// })
