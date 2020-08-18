@@ -55,33 +55,27 @@ async function getLiquorDetails(id) {
   try {
     const response = await axios.get(idUrl)
     console.log(response.data.drinks)
+    drinkDetails.append(response.data.drinks[0].strDrink)
     let img = document.createElement('img')
     img.src = response.data.drinks[0].strDrinkThumb
     drinkDetails.append(img)
     let data = response.data.drinks[0]
     for (i in data) {
-      if (i.substring(0,6) === 'strIng') {
-        console.log(data[i])
+      if (i.substring(0, 6) === 'strIng') {
+        if (data[i] !== null) {
+          drinkDetails.append(data[i])
+        }
       }
-    
     }
     for (i in data) {
       if (i.substring(0,6) === 'strMea') {
-        console.log(data[i])
+        if (data[i] !== null) {
+          drinkDetails.append(data[i])
+        }
       }
     
     }
-
-    // response.data.drinks.idDrink
-  //   // let drinkId = document.createElement('div')
-  //   // drinkId.className = 'drink-id'
-  //   // drinkId.append(id.strDrink)
-  //   // let img = document.createElement('img')
-  //   // img.src = id.strDrinkThumb
-  //   // drinkId.append(img)
-  //   // drinkId.append(id.strIngredient1)
-  //   // drinkId.append(id.strMeasure1)
-  //   // drinkId.append(id.strInstructions)
+    drinkDetails.append(response.data.drinks[0].strInstructions)
   } catch (error) {
     console.log(`Error: ${error}`)
   }
