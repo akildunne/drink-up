@@ -18,6 +18,9 @@ liquor.forEach((name) => {
 })
 //
 
+// let button = document.createElement('button')
+// button.innerHTML = getLiquor()
+
 // Mick helped with this also
 const getLiquor = async (name) => {
   const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${name}`

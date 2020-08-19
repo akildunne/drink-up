@@ -1,0 +1,39 @@
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #25245D,
+}
+div.liquor.select {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  color: #25245D
+}
+
+h1 {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: Black;
+  font-size: 65pt;
+  font-style: normal;
+  color: #FEC260;
+}
+
+main {
+
+}
+
+h2 {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: Black;
+  font-size: 65pt;
+  font-style: normal;
+  color: #FEC260;
+}
+
+footer {
+  
+
+}
+
+@media screen and (max-width: 600px), (max-height: 500px) {
