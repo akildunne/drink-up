@@ -58,8 +58,8 @@ async function getLiquorDetails(id) {
     const response = await axios.get(idUrl)
     console.log(response.data.drinks)
     let h2 = document.createElement('h2')
-    h2.textContent = 
-    drinkDetails.append(response.data.drinks[0].strDrink)
+    h2.textContent = response.data.drinks[0].strDrink
+    drinkDetails.append(h2)
     let img = document.createElement('img')
     img.src = response.data.drinks[0].strDrinkThumb
     drinkDetails.append(img)
@@ -67,19 +67,28 @@ async function getLiquorDetails(id) {
     for (i in data) {
       if (i.substring(0, 6) === 'strIng') {
         if (data[i] !== null) {
-          drinkDetails.append(data[i])
+          let p = document.createElement('p')
+          p.classList.add('.ingredients')
+          p.textContent = data[i]
+          drinkDetails.append(p)
         }
       }
     }
     for (i in data) {
       if (i.substring(0,6) === 'strMea') {
         if (data[i] !== null) {
-          drinkDetails.append(data[i])
+          let p = document.createElement('p')
+          p.classList.add('.measurements')
+          p.textContent = data[i]
+          drinkDetails.append(p)
         }
       }
     
     }
-    drinkDetails.append(response.data.drinks[0].strInstructions)
+    let p = document.createElement('p')
+    p.classList.add('.instructions')
+    p.textContent = response.data.drinks[0].strInstructions
+    drinkDetails.append(p)
   } catch (error) {
     console.log(`Error: ${error}`)
   }
