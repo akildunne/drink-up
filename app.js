@@ -28,7 +28,9 @@ const getLiquor = async (name) => {
       // console.log(drink)
       let drinkResultWrapper = document.createElement('div')
       drinkResultWrapper.className = 'drink-result-wrapper'
-      drinkResultWrapper.append(drink.strDrink)
+      let h2 = document.createElement('h2')
+      h2.textContent = drink.strDrink
+      drinkResultWrapper.append(h2)
       let img = document.createElement('img')
       img.src = drink.strDrinkThumb
       drinkResultWrapper.append(img)
@@ -55,6 +57,8 @@ async function getLiquorDetails(id) {
   try {
     const response = await axios.get(idUrl)
     console.log(response.data.drinks)
+    let h2 = document.createElement('h2')
+    h2.textContent = 
     drinkDetails.append(response.data.drinks[0].strDrink)
     let img = document.createElement('img')
     img.src = response.data.drinks[0].strDrinkThumb
