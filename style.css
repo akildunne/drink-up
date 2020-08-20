@@ -1,5 +1,18 @@
 
 
+.container {
+  display: flex;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  background:  #25245D;
+  margin: 0 auto;
+
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: #25245D;
@@ -8,6 +21,7 @@ body {
 }
 
 .drop-down {
+  display: flex;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 14pt;
@@ -26,13 +40,15 @@ select {
 }
 
 option {
-  background-color: #FEC260;
+  background-color: #FFFFFF;
   margin: 0 auto;
 }
 
-/* option.hover {
+option.hover {
+    background-color: orange;
+    transition: all 0.25s ease;
+  }
 
-} */
 
 .drink-result-wrapper {
   
@@ -69,16 +85,19 @@ img {
 .ingredients {
   display: inline;
   text-align: left;
+  color: #FEC260;
 }
 
 .measurements {
   display: inline;
   text-align: left;
+  color: #FEC260;
 }
 
 .instructions {
   display: block;
   text-align: center;
+  color: #FEC260;
 }
 
 
