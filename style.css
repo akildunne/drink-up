@@ -22,19 +22,11 @@ body {
   background-position: center top; */
 }
 
-/* main {
-  background-image: url(https://i.imgur.com/9ZGSix7.jpg);
-  background-size: cover auto;
-  background-repeat: no-repeat;
-  background-position: center top;
-} */
-
 .drop-down {
   display: flex;
   justify-content: center;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: 14pt;
 }
 
 .liquor-wrapper {
@@ -45,12 +37,16 @@ body {
 }
 
 .liquor-select {
-  height: 10%;
-  width: 50%;
+  height: 25%;
+  width: 70%;
   background-color: #FEC260;
   font-family: 'Lato', sans-serif;
-  display: flex;
+  font-size: 3vw;
   align-items: center;
+  border: solid  #FEC260;
+  border-radius: 3pt 3pt 3pt 3pt;
+  display: flex;
+  justify-content: center;
 }
 
 .drink-image {
@@ -58,42 +54,46 @@ body {
   justify-content: center;
 }
 
-option {
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  width: 20px;
+/* .select-items {
+  position: absolute;
+  background-color:  #FEC260;
+  border: solid #25245D;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 select.hover {
     background-color: orange;
     transition: all 0.25s ease;
-  }
-
+  } */
 
 .results {
-  margin: 60px;
+  margin: 40px;
 }
 
 .drink-result-wrapper {
-  margin: 120px;
+  margin: 50px 0 0 0;
 }
 
 h1 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: bold;
   /* font-size: 65pt; */
-  font-size: 8vw;
+  font-size: 15vw;
   font-style: normal;
   color: #FEC260;
   text-align: center;
   margin: 90px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
-/* working on background pic */
 
 h2 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: Black;
-  font-size: 5vw;
+  font-size: 7vw;
   font-style: normal;
   color: #FEC260;
   text-align: center;
@@ -112,6 +112,7 @@ h2 {
   display: inline;
   text-align: left;
   color: #FEC260 !important;
+  font-size: 7vw;
 }
 
 .measurements {
@@ -121,14 +122,20 @@ h2 {
 }
 
 .instructions {
-  display: block;
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #FEC260;
+
 }
 
 
 /* This is from Stack Overflow */
 /* @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+    and (device-width : 600px) {
+      body {
+      background-color: #25245D;
+      }
+     } */
+    /* and (device-height : 900px) { }
     and (-webkit-device-pixel-ratio : 3) { } */

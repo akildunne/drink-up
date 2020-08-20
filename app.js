@@ -52,6 +52,7 @@ liquorSelect.addEventListener('change', () => {
   getLiquor(liquorSelect.value) 
   let drinkImage = document.querySelector('.drink-image')
   drinkImage.style.display = 'none'
+  liquorSelect.style.display = 'none'
 })
 
 // Once the drink is clicked, the function below shows that specific drink's details from another end point.
