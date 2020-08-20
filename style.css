@@ -2,9 +2,9 @@
 
 .container {
   display: flex;
-  /* flex-direction: column;
-  flex-wrap: wrap; */
-  flex-flow: row wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* flex-flow: row wrap; */
   justify-content: center;
   /* align-items: center; */
   align-content: center;
@@ -16,10 +16,10 @@
 body {
   font-family: 'Lato', sans-serif;
   background-color: #25245D;
-  background-image: url(https://i.imgur.com/9ZGSix7.jpg);
+  /* background-image: url(https://i.imgur.com/9ZGSix7.jpg);
   background-size: cover auto;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top; */
 }
 
 /* main {
@@ -31,26 +31,37 @@ body {
 
 .drop-down {
   display: flex;
+  justify-content: center;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: 14pt;
-  align-items: center;
 }
 
 .liquor-wrapper {
-  align-items: center;
+  display: flex;
+  height: 10%;
+  width: 50%;
+  justify-content: center;
 }
 
-select {
+.liquor-select {
+  height: 10%;
+  width: 50%;
   background-color: #FEC260;
   font-family: 'Lato', sans-serif;
   display: flex;
   align-items: center;
 }
 
+.drink-image {
+  display: flex;
+  justify-content: center;
+}
+
 option {
   background-color: #FFFFFF;
   margin: 0 auto;
+  width: 20px;
 }
 
 select.hover {
@@ -89,7 +100,7 @@ h2 {
   margin-bottom: 15;
 }
 
-img {
+.drink-thumb {
   display: block;
   border-radius: 50%;
   width: 75%;
@@ -100,7 +111,7 @@ img {
 .ingredients {
   display: inline;
   text-align: left;
-  color: #FEC260;
+  color: #FEC260 !important;
 }
 
 .measurements {
@@ -117,7 +128,7 @@ img {
 
 
 /* This is from Stack Overflow */
-@media only screen 
+/* @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { }
+    and (-webkit-device-pixel-ratio : 3) { } */

@@ -36,6 +36,7 @@ const getLiquor = async (name) => {
       drinkResultWrapper.append(h2)
       let img = document.createElement('img')
       img.src = drink.strDrinkThumb
+      img.className = 'drink-thumb'
       drinkResultWrapper.append(img)
       results.append(drinkResultWrapper)
       drinkResultWrapper.addEventListener('click', () => {
@@ -48,7 +49,9 @@ const getLiquor = async (name) => {
 }
 
 liquorSelect.addEventListener('change', () => {
-  getLiquor(liquorSelect.value)
+  getLiquor(liquorSelect.value) 
+  let drinkImage = document.querySelector('.drink-image')
+  drinkImage.style.display = 'none'
 })
 
 // Once the drink is clicked, the function below shows that specific drink's details from another end point.
@@ -63,6 +66,7 @@ async function getLiquorDetails(id) {
     drinkDetails.append(h2)
     let img = document.createElement('img')
     img.src = response.data.drinks[0].strDrinkThumb
+    img.className = 'drink-thumb'
     drinkDetails.append(img)
     // This is to cycle through the string items that are labeled ingredients or measurements and only takes the items that have actual data. 
     let data = response.data.drinks[0]
@@ -70,7 +74,7 @@ async function getLiquorDetails(id) {
       if (i.substring(0, 6) === 'strIng') {
         if (data[i] !== null) {
           let p = document.createElement('p')
-          p.classList.add('.ingredients')
+          p.classList.add('ingredients')
           p.textContent = data[i]
           drinkDetails.append(p)
         }
@@ -80,7 +84,7 @@ async function getLiquorDetails(id) {
       if (i.substring(0,6) === 'strMea') {
         if (data[i] !== null) {
           let p = document.createElement('p')
-          p.classList.add('.measurements')
+          p.classList.add('measurements')
           p.textContent = data[i]
           drinkDetails.append(p)
         }
@@ -88,7 +92,7 @@ async function getLiquorDetails(id) {
     
     }
     let p = document.createElement('p')
-    p.classList.add('.instructions')
+    p.classList.add('instructions')
     p.textContent = response.data.drinks[0].strInstructions
     drinkDetails.append(p)
   } catch (error) {
