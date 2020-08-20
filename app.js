@@ -6,6 +6,8 @@ let liquorSelect = document.querySelector('.liquor-select')
 let liquorName = document.createElement('option')
 let results = document.querySelector('.results')
 let drinkDetails = document.querySelector('.drink-details')
+
+// Create drop-down menue with liquor selections
 liquorName.value = ''
 liquorName.innerHTML = 'Pick Your Poison'
 liquorSelect.append(liquorName)
@@ -18,10 +20,8 @@ liquor.forEach((name) => {
 })
 //
 
-// let button = document.createElement('button')
-// button.innerHTML = getLiquor()
-
 // Mick helped with this also
+// This function links the alcohol selected and supplies all drinks with that liquor form the API
 const getLiquor = async (name) => {
   const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${name}`
   try {
@@ -51,11 +51,9 @@ liquorSelect.addEventListener('change', () => {
   getLiquor(liquorSelect.value)
 })
 
-
+// Once the drink is clicked, the function below shows that specific drink's details from another end point.
 async function getLiquorDetails(id) {
-  // console.log(drinkDetails)
   results.innerHTML= ''
-  // console.log('test', id)
   const idUrl = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
   try {
     const response = await axios.get(idUrl)
@@ -66,6 +64,7 @@ async function getLiquorDetails(id) {
     let img = document.createElement('img')
     img.src = response.data.drinks[0].strDrinkThumb
     drinkDetails.append(img)
+    // This is to cycle through the string items that are labeled ingredients or measurements and only takes the items that have actual data. 
     let data = response.data.drinks[0]
     for (i in data) {
       if (i.substring(0, 6) === 'strIng') {

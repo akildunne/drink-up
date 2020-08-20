@@ -18,7 +18,16 @@ body {
   background-color: #25245D;
   background-image: url(https://i.imgur.com/9ZGSix7.jpg);
   background-size: cover auto;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
+
+/* main {
+  background-image: url(https://i.imgur.com/9ZGSix7.jpg);
+  background-size: cover auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+} */
 
 .drop-down {
   display: flex;
@@ -44,30 +53,35 @@ option {
   margin: 0 auto;
 }
 
-option.hover {
+select.hover {
     background-color: orange;
     transition: all 0.25s ease;
   }
 
 
+.results {
+  margin: 60px;
+}
+
 .drink-result-wrapper {
-  
+  margin: 120px;
 }
 
 h1 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: bold;
-  font-size: 65pt;
+  /* font-size: 65pt; */
+  font-size: 8vw;
   font-style: normal;
   color: #FEC260;
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 90px 0 0 0;
 }
 
 h2 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: Black;
-  font-size: 30pt;
+  font-size: 5vw;
   font-style: normal;
   color: #FEC260;
   text-align: center;
