@@ -127,17 +127,48 @@ h3 {
   margin: 15px 40px 30px 40px;
 }
 
-/* footer {
+footer {
   background-color:  #25245D;
   color: white; 
-} */
+  margin: 20px;
+}
 
     /* iPad Portrait */
 @media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1) {
+and (min-device-width: 768px) {
+  
+  .liquor-select {
+    height: 35%;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 17vw;
+  }
+
+  h2 {
+    font-size: 10vw;
+  }
+
+  h3 {
+    font-size: 8vw;
+  }
+  
+  .ingredients {
+    font-size: 5vw;
+    margin: 15px 35px 15px 25px;
+  }
+  
+  .measurements {
+    font-size: 5vw;
+    margin: 15px 35px 15px 25px;
+  }
+  
+  .instructions {
+    font-size: 5vw;
+    margin: 25px 40px 45px 40px;
+  }
 }
+
   
     
