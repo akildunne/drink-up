@@ -25,14 +25,14 @@ body {
 
 .liquor-wrapper {
   display: flex;
-  height: 10%;
+  height: 30%;
   width: 50%;
   justify-content: center;
 }
 
 .liquor-select {
-  height: 25%;
-  width: 70%;
+  height: 35%;
+  width: 85%;
   background-color: #FEC260;
   font-family: 'Lato', sans-serif;
   font-size: 3vw;
@@ -124,17 +124,13 @@ h3 {
   text-align: center;
   color: #FEC260;
   font-size: 4vw;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  margin: 15px 40px 30px 40px;
 }
 
-
-/* This is from Stack Overflow */
-/* @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { } */
+/* footer {
+  background-color:  #25245D;
+  color: white; 
+} */
 
     /* iPad Portrait */
 @media only screen 
