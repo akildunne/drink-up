@@ -114,11 +114,11 @@ async function getLiquorDetails(id) {
     }
 
     let instructionHeader = document.createElement('h3')
-    instructionHeader.textContent = 'Instructions'
+    instructionHeader.textContent = 'Recipe'
     drinkDetails.append(instructionHeader)
     
     let p = document.createElement('p')
-    p.classList.add('instructions')
+    p.classList.add('recipe')
     p.textContent = response.data.drinks[0].strInstructions
     drinkDetails.append(p)
   
