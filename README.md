@@ -142,15 +142,15 @@ I anticipate neededing quite a bit of time for each feature. My goal is to focus
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Set-up | H | 3.5hrs| 5hrs | 5hrs |
+| HTML Set-up | H | 3.5hrs| 6hrs | 5hrs |
 | CSS Set-up | H | 4hrs | 8hrs | 8hrs |
 | Flex Box Layout | M | 6hrs | 3hrs | 3hrs | 
-| Drop-down Link API | H | 8hrs | 8hrs | 8hrs |
-| Search Button | M | 3hrs | 2hrs | 2hrs |
+| Drop-down Link API | H | 8hrs | 8hrs | 3hrs |
+| Search Button | M | 3hrs | 3hrs | 1hrs |
 | Image API | H | 6hrs | 2hrs | 2hrs |
 | Drink API | H | 4hrs | 3hrs | 3hrs |
 | Adjusting Layout & API Results | L | 8hrs| 9hrs | 9hrs |
-| Total | H | 42.5hrs| 40hrs | 40hrs |
+| Total | H | 42.5hrs| 42hrs | 34hrs |
 
 ## Code Snippet
 

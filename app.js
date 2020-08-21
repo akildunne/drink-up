@@ -1,7 +1,5 @@
-// `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${name}`
-// `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
 
-// Mick helped me with this part 
+// Mick helped me with this part
 let liquorSelect = document.querySelector('.liquor-select')
 let liquorName = document.createElement('option')
 let results = document.querySelector('.results')
