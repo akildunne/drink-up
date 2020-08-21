@@ -118,6 +118,8 @@ https://imgur.com/eXEj3w
 - Choose cocktail by name/image and have cocktail pop up on new page
 - Add random cocktail end point at home page
 - Add a search text box for the user to enter cocktail names directly
+- Add back button and home button
+- Add icons for polished look
 
 ## Project Schedule
 
@@ -125,9 +127,9 @@ https://imgur.com/eXEj3w
 |---|---| ---|
 |August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |August 17| Project Approval, Start HTML | Complete
-|August 18| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|August 19| Initial Clickable Model  | Incomplete
-|August 20| MVP | Incomplete
+|August 18| Core Application Structure (HTML, CSS, etc.) | Complete
+|August 19| Initial Clickable Model  | Complete
+|August 20| MVP | Complete
 |August 21| Presentations | Incomplete
 
 ## Priority Matrix
@@ -140,25 +142,34 @@ I anticipate neededing quite a bit of time for each feature. My goal is to focus
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Set-up | H | 3.5hrs| hrs | hrs |
-| CSS Set-up | H | 4hrs | hrs | hrs |
-| Flex Box Layout | M | 6hrs | hrs | hrs | 
-| Drop-down Link API | H | 8hrs | hrs | hrs |
-| Search Button | M | 3hrs | hrs | hrs |
-| Image API | H | 6hrs | hrs | hrs |
-| Drink API | H | 4hrs | hrs | hrs |
-| Adjusting Layout & API Results | L | 8hrs| hrs | hrs |
-| Total | H | 42.5hrs| hrs | hrs |
+| HTML Set-up | H | 3.5hrs| 5hrs | 5hrs |
+| CSS Set-up | H | 4hrs | 8hrs | 8hrs |
+| Flex Box Layout | M | 6hrs | 3hrs | 3hrs | 
+| Drop-down Link API | H | 8hrs | 8hrs | 8hrs |
+| Search Button | M | 3hrs | 2hrs | 2hrs |
+| Image API | H | 6hrs | 2hrs | 2hrs |
+| Drink API | H | 4hrs | 3hrs | 3hrs |
+| Adjusting Layout & API Results | L | 8hrs| 9hrs | 9hrs |
+| Total | H | 42.5hrs| 40hrs | 40hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+In order to filter through the ingredients and measurements, the for loop below had to exclude the item values of null as there were place holders for up to 15 ingredients and measurements that most of the drinks did not need. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+    for (i in data) {
+      if (i.substring(0,6) === 'strMea') {
+        if (data[i] !== null) {
+          let p = document.createElement('p')
+          p.classList.add('measurements')
+          p.textContent = data[i]
+          measurementDiv.append(p)
+        }
+      }
+    
+    }
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes. 
+ - Changed picture boarder to work with different photo styles
+
