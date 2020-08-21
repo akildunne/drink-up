@@ -3,8 +3,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* flex-flow: row wrap; */
   justify-content: center;
   /* align-items: center; */
   align-content: center;
@@ -16,10 +14,6 @@
 body {
   font-family: 'Lato', sans-serif;
   background-color: #25245D;
-  /* background-image: url(https://i.imgur.com/9ZGSix7.jpg);
-  background-size: cover auto;
-  background-repeat: no-repeat;
-  background-position: center top; */
 }
 
 .drop-down {
@@ -54,23 +48,8 @@ body {
   justify-content: center;
 }
 
-/* .select-items {
-  position: absolute;
-  background-color:  #FEC260;
-  border: solid #25245D;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-select.hover {
-    background-color: orange;
-    transition: all 0.25s ease;
-  } */
-
 .results {
-  margin: 40px;
+  margin: 0 auto;
 }
 
 .drink-result-wrapper {
@@ -108,17 +87,23 @@ h2 {
   margin-right: auto;
 }
 
+.ing-mea-wrapper {
+  display: flex;
+
+}
+
 .ingredients {
-  display: inline;
+  display: block;
   text-align: left;
   color: #FEC260 !important;
-  font-size: 7vw;
+  font-size: 4vw;
 }
 
 .measurements {
-  display: inline;
+  display: block;
   text-align: left;
   color: #FEC260;
+  font-size: 4vw;
 }
 
 .instructions {
@@ -126,16 +111,25 @@ h2 {
   justify-content: center;
   text-align: center;
   color: #FEC260;
-
+  font-size: 4vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: ;
 }
 
 
 /* This is from Stack Overflow */
 /* @media only screen 
-    and (device-width : 600px) {
-      body {
-      background-color: #25245D;
-      }
-     } */
-    /* and (device-height : 900px) { }
+    and (device-width : 375px) 
+    and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { } */
+
+    /* iPad Portrait */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1) {
+}
+  
+    

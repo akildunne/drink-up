@@ -71,27 +71,41 @@ async function getLiquorDetails(id) {
     drinkDetails.append(img)
     // This is to cycle through the string items that are labeled ingredients or measurements and only takes the items that have actual data. 
     let data = response.data.drinks[0]
-    for (i in data) {
-      if (i.substring(0, 6) === 'strIng') {
-        if (data[i] !== null) {
-          let p = document.createElement('p')
-          p.classList.add('ingredients')
-          p.textContent = data[i]
-          drinkDetails.append(p)
-        }
-      }
-    }
+    let ingMeaWrapper = document.createElement('div')
+    ingMeaWrapper.className = 'ing-mea-wrapper'
+    drinkDetails.append(ingMeaWrapper)
+
+    let measurementDiv = document.createElement('div')
+    measurementDiv.className = 'measurements-list'
+    ingMeaWrapper.append(measurementDiv)
+
+    let ingredientDiv = document.createElement('div')
+    ingredientDiv.className = 'ingredients-list'
+    ingMeaWrapper.append(ingredientDiv)
+
     for (i in data) {
       if (i.substring(0,6) === 'strMea') {
         if (data[i] !== null) {
           let p = document.createElement('p')
           p.classList.add('measurements')
           p.textContent = data[i]
-          drinkDetails.append(p)
+          measurementDiv.append(p)
         }
       }
     
     }
+    
+    for (i in data) {
+      if (i.substring(0, 6) === 'strIng') {
+        if (data[i] !== null) {
+          let p = document.createElement('p')
+          p.classList.add('ingredients')
+          p.textContent = data[i]
+          ingredientDiv.append(p)
+        }
+      }
+    }
+
     let p = document.createElement('p')
     p.classList.add('instructions')
     p.textContent = response.data.drinks[0].strInstructions
