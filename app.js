@@ -7,7 +7,7 @@ let liquorName = document.createElement('option')
 let results = document.querySelector('.results')
 let drinkDetails = document.querySelector('.drink-details')
 
-// Create drop-down menue with liquor selections
+// Create drop-down menu with liquor selections
 liquorName.value = ''
 liquorName.innerHTML = 'Pick Your Poison'
 liquorSelect.append(liquorName)
@@ -26,19 +26,20 @@ const getLiquor = async (name) => {
   const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${name}`
   try {
     const response = await axios.get(url)
-    // console.log(response.data.drinks)
     response.data.drinks.forEach((drink) => {
-      // console.log(drink)
       let drinkResultWrapper = document.createElement('div')
       drinkResultWrapper.className = 'drink-result-wrapper'
+      
       let h2 = document.createElement('h2')
       h2.textContent = drink.strDrink
       drinkResultWrapper.append(h2)
+      
       let img = document.createElement('img')
       img.src = drink.strDrinkThumb
       img.className = 'drink-thumb'
       drinkResultWrapper.append(img)
       results.append(drinkResultWrapper)
+      
       drinkResultWrapper.addEventListener('click', () => {
         getLiquorDetails(drink.idDrink)
       })
@@ -48,6 +49,7 @@ const getLiquor = async (name) => {
   }
 }
 
+// Once the dropdown is clicked, it disappears 
 liquorSelect.addEventListener('change', () => {
   getLiquor(liquorSelect.value) 
   let drinkImage = document.querySelector('.drink-image')
@@ -61,19 +63,25 @@ async function getLiquorDetails(id) {
   const idUrl = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`
   try {
     const response = await axios.get(idUrl)
-    console.log(response.data.drinks)
+    // console.log(response.data.drinks)
     let h2 = document.createElement('h2')
     h2.textContent = response.data.drinks[0].strDrink
     drinkDetails.append(h2)
+    
     let img = document.createElement('img')
     img.src = response.data.drinks[0].strDrinkThumb
     img.className = 'drink-thumb'
     drinkDetails.append(img)
-    // This is to cycle through the string items that are labeled ingredients or measurements and only takes the items that have actual data. 
+    
+    // This is to cycle through the string items that are labeled ingredients or measurements and only takes the items that have actual data.
     let data = response.data.drinks[0]
     let ingMeaWrapper = document.createElement('div')
     ingMeaWrapper.className = 'ing-mea-wrapper'
     drinkDetails.append(ingMeaWrapper)
+
+    let ingredientHeader = document.createElement('h3')
+    ingredientHeader.textContent = 'Ingredients'
+    ingMeaWrapper.append(ingredientHeader)
 
     let measurementDiv = document.createElement('div')
     measurementDiv.className = 'measurements-list'
@@ -94,7 +102,7 @@ async function getLiquorDetails(id) {
       }
     
     }
-    
+
     for (i in data) {
       if (i.substring(0, 6) === 'strIng') {
         if (data[i] !== null) {
@@ -106,10 +114,12 @@ async function getLiquorDetails(id) {
       }
     }
 
+    
     let p = document.createElement('p')
     p.classList.add('instructions')
     p.textContent = response.data.drinks[0].strInstructions
     drinkDetails.append(p)
+  
   } catch (error) {
     console.log(`Error: ${error}`)
   }

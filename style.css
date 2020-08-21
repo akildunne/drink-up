@@ -64,7 +64,7 @@ h1 {
   font-style: normal;
   color: #FEC260;
   text-align: center;
-  margin: 90px 0 0 0;
+  margin: 60px 0 0 0;
   display: flex;
   justify-content: center;
 }
@@ -79,6 +79,10 @@ h2 {
   margin-bottom: 15;
 }
 
+h3 {
+  
+}
+
 .drink-thumb {
   display: block;
   border-radius: 50%;
@@ -89,7 +93,7 @@ h2 {
 
 .ing-mea-wrapper {
   display: flex;
-
+  justify-content: center;
 }
 
 .ingredients {
@@ -104,6 +108,7 @@ h2 {
   text-align: left;
   color: #FEC260;
   font-size: 4vw;
+  margin: 15px 30px 15px 20px;
 }
 
 .instructions {
