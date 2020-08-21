@@ -75,13 +75,14 @@ async function getLiquorDetails(id) {
     
     // This is to cycle through the string items that are labeled ingredients or measurements and only takes the items that have actual data.
     let data = response.data.drinks[0]
-    let ingMeaWrapper = document.createElement('div')
-    ingMeaWrapper.className = 'ing-mea-wrapper'
-    drinkDetails.append(ingMeaWrapper)
 
     let ingredientHeader = document.createElement('h3')
     ingredientHeader.textContent = 'Ingredients'
-    ingMeaWrapper.append(ingredientHeader)
+    drinkDetails.append(ingredientHeader)
+
+    let ingMeaWrapper = document.createElement('div')
+    ingMeaWrapper.className = 'ing-mea-wrapper'
+    drinkDetails.append(ingMeaWrapper)
 
     let measurementDiv = document.createElement('div')
     measurementDiv.className = 'measurements-list'
@@ -114,6 +115,9 @@ async function getLiquorDetails(id) {
       }
     }
 
+    let instructionHeader = document.createElement('h3')
+    instructionHeader.textContent = 'Instructions'
+    drinkDetails.append(instructionHeader)
     
     let p = document.createElement('p')
     p.classList.add('instructions')

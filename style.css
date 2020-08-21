@@ -72,7 +72,7 @@ h1 {
 h2 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: Black;
-  font-size: 7vw;
+  font-size: 9vw;
   font-style: normal;
   color: #FEC260;
   text-align: center;
@@ -80,7 +80,13 @@ h2 {
 }
 
 h3 {
-  
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: Black;
+  font-size: 7vw;
+  font-style: normal;
+  color: #FEC260;
+  text-align: center;
+  margin: 22px auto 0 auto;
 }
 
 .drink-thumb {
@@ -101,6 +107,7 @@ h3 {
   text-align: left;
   color: #FEC260 !important;
   font-size: 4vw;
+  margin: 15px 30px 15px 20px;
 }
 
 .measurements {
@@ -119,7 +126,7 @@ h3 {
   font-size: 4vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: ;
+  margin-bottom: 30px;
 }
 
 
